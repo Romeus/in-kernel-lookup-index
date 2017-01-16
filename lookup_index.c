@@ -94,6 +94,20 @@ int cch_index_shrink(cch_index_entry *index, int max_mem_kb)
 }
 
 /*
+ * Export module's public API to kernel
+ */
+
+EXPORT_SYMBOL_GPL(cch_index_create);
+EXPORT_SYMBOL_GPL(cch_index_destroy);
+EXPORT_SYMBOL_GPL(cch_index_find);
+EXPORT_SYMBOL_GPL(cch_index_find_direct);
+EXPORT_SYMBOL_GPL(cch_index_insert);
+EXPORT_SYMBOL_GPL(cch_index_insert_direct);
+EXPORT_SYMBOL_GPL(cch_index_remove);
+EXPORT_SYMBOL_GPL(cch_index_remove_direct);
+EXPORT_SYMBOL_GPL(cch_index_shrink);
+
+/*
  * Module's initialization code
  */
 
