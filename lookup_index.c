@@ -93,6 +93,10 @@ int cch_index_shrink(cch_index_entry *index, int max_mem_kb)
 	return 0;
 }
 
+/*
+ * Module's initialization code
+ */
+
 static int __init hello_init(void)
 {
     printk(KERN_INFO "Initialize multilevel_index_lookup module!\n");
