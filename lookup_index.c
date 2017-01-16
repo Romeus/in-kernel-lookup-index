@@ -26,7 +26,7 @@
  */
 
 /*
- * This is module that maintains multi level lookup index
+ * This module implements multi level lookup index
  */
 
 #include <linux/module.h>
