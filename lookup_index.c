@@ -38,6 +38,60 @@ MODULE_LICENSE("GPL");
 MODULE_AUTHOR("Roman Storozhenko <romeusmeister@gmail.com>");
 MODULE_DESCRIPTION("MultiLevel Lookup Index Module");
 
+/*
+ * Implementation of the module's public interface
+ */
+
+int cch_index_create(int levels, int bits, int root_bits, int low_bits,
+		     cch_index **out)
+{
+	return 0;
+}
+
+void cch_index_destroy(struct cch_index *index)
+{
+}
+
+int cch_index_find(cch_index *index, uint64_t key, void **out_value,
+		   cch_index_entry **index_entry, int *value_offset)
+{
+	return 0;
+}
+
+int cch_index_find_direct(cch_index_entry *entry, int offset, void **out_value,
+			  cch_index_entry **next_index_entry,
+			  int *value_offset)
+{
+	return 0;
+}
+
+int cch_index_insert(cch_index *index, uint64_t key, void *value, bool replace,
+		     cch_index_entry **new_index_entry, int *new_value_offset)
+{
+	return 0;
+}
+
+int cch_index_insert_direct(cch_index_entry *entry, bool replace, void *value,
+			    cch_index_entry **new_index_entry,
+			    int *new_value_offset)
+{
+	return 0;
+}
+
+int cch_index_remove(cch_index *index, uint64_t key)
+{
+	return 0;
+}
+
+int cch_index_remove_direct(cch_index_entry *entry, int offset)
+{
+	return 0;
+}
+
+int cch_index_shrink(cch_index_entry *index, int max_mem_kb)
+{
+	return 0;
+}
 
 static int __init hello_init(void)
 {
