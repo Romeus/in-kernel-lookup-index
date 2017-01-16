@@ -38,6 +38,7 @@ typedef struct cch_index {
 
 int cch_index_create(int levels, int bits, int root_bits, int low_bits,
 		     cch_index **out);
+
 void cch_index_destroy(struct cch_index *index);
 
 int cch_index_find(cch_index *index, uint64_t key, void **out_value,
