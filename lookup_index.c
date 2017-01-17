@@ -111,16 +111,16 @@ EXPORT_SYMBOL_GPL(cch_index_shrink);
  * Module's initialization code
  */
 
-static int __init hello_init(void)
+static int __init lookup_init(void)
 {
     printk(KERN_INFO "Initialize multilevel_index_lookup module!\n");
     return 0;
 }
 
-static void __exit hello_cleanup(void)
+static void __exit lookup_cleanup(void)
 {
     printk(KERN_INFO "Cleaning up multilevel_index_lookup module.\n");
 }
 
-module_init(hello_init);
-module_exit(hello_cleanup);
+module_init(lookup_init);
+module_exit(lookup_cleanup);
